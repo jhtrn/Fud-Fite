@@ -1,0 +1,236 @@
+*,h1,h2,h3,h4,h5,h6,p,span,div{
+  font-family: "Electrolize", sans-serif;
+  box-sizing: border-box;
+}
+.all-tasks {
+  height: 100%;
+  overflow: auto;
+}
+
+.header {
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  color: white;
+}
+.header .top {
+  background: rgba(58, 71, 147, 0.6);
+  padding: 15px 10px;
+  text-align: right;
+  position: relative;
+}
+.header .top header {
+  padding: 15px;
+}
+.header .top header a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+}
+.header .top header .fa {
+  color: white;
+}
+.header .top header .logo {
+  display: inline-block;
+  margin-left: -4px;
+  color: #FFF;
+  font-family: "Electrolize", sans-serif;
+  font-size: 40px;
+  float: left;
+  text-transform: lowercase;
+}
+.header .top header .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+.header .top header .menu {
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: right;
+  padding-right: 20px;
+}
+.header .top header .menu ul li {
+  display: inline-block;
+}
+.header .top header .menu ul li a {
+  margin-right: 20px;
+}
+
+.task-form {
+  background: url("../img/wood-background.jpeg");
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  color: #FFF;
+  padding: 50px 0;
+  transform: translate(0, 100%);
+  transition: all .6s ease-in-out;
+}
+.task-form.active {
+  visibility: visible;
+  transform: translate(0, 0);
+}
+
+.task-form.hidden {
+  visibility: hidden;
+}
+.task-form .close-btn {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  padding: 15px;
+  cursor: pointer;
+}
+.task-form .close-btn .fa {
+  font-size: 36px;
+}
+.task-form form {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.task-form form h3 {
+  color: #FFBF3E;
+  margin: 50px 0;
+  font-size: 40px;
+  text-align: center;
+}
+.task-form .form-group {
+  margin-bottom: 20px;
+}
+.task-form label {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  display: block;
+  text-transform: capitalize;
+  margin: 0 0 15px 0;
+}
+.task-form input[type="text"], .task-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  font-family: "Electrolize", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  color: #FFF;
+}
+.task-form input[type="text"]:focus, .task-form textarea:focus {
+  border: none;
+  outline: none;
+}
+.task-form textarea {
+  height: 45px;
+}
+.task-form button {
+  background: #FFBF3E;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 15px 20px;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  #all-tasks .header .add-circle {
+    background: #E6DAD2;
+    border-radius: 50%;
+    position: absolute;
+    top: 112px;
+    right: 25px;
+    padding: 5px 7px;
+  }
+  #all-tasks .header .top .logo {
+    color: #fff;
+    font-family: "Electrolize", sans-serif;
+    font-size: 30px;
+    float: left;
+    text-transform: uppercase;
+  }
+  #all-tasks .header .top .tasks-total {
+    top: 0;
+  }
+  #all-tasks .header .top .tasks-total .task {
+    display: block;
+  }
+  #all-tasks .header .top .tasks-total .task .number {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 6px 0 10px;
+    position: relative;
+    top: 3px;
+  }
+  #all-tasks .content-area .tasks-container .task-box .check-box {
+    padding: 2px;
+    border-radius: 10px;
+    border: 1.5px solid #D1D1D1;
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    font-size: 25px;
+    color: #E6DAD2;
+  }
+  #all-tasks .content-area .tasks-container .task-box .title {
+    color: #FFF;
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    max-width: 80%;
+  }
+  #all-tasks .task-form .close-btn {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    padding: 15px;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #all-tasks .header .add-circle {
+    background: url(wood-background.jpeg);
+    border-radius: 50%;
+    position: absolute;
+    top: 112px;
+    right: 25px;
+    padding: 5px 7px;
+  }
+  #all-tasks .header .top .logo {
+    color: #fff;
+    font-family: "Electrolize", sans-serif;
+    font-size: 30px;
+    float: left;
+    text-transform: uppercase;
+  }
+  #all-tasks .header .top .tasks-total {
+    top: 0;
+  }
+  #all-tasks .header .top .tasks-total .task {
+    display: block;
+  }
+  #all-tasks .header .top .tasks-total .task .number {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 6px 0 10px;
+    position: relative;
+    top: 3px;
+  }
+}
