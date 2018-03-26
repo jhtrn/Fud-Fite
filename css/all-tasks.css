@@ -108,7 +108,7 @@
 .task-form label {
   font-family: "Electrolize", sans-serif;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 30px;
   display: block;
   text-transform: capitalize;
   margin: 0 0 15px 0;
@@ -120,7 +120,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   font-family: "Electrolize", sans-serif;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 28px;
   color: #FFF;
 }
 .task-form input[type="text"]:focus, .task-form textarea:focus {
@@ -130,6 +130,13 @@
 .task-form textarea {
   height: 45px;
 }
+
+.task-form .upload-pictures {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 35px;
+}
+
 .task-form button {
   background: #FFBF3E;
   border: none;
