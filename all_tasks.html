@@ -29,7 +29,7 @@
       </section>
 
 
-      <section class="main-content-area" >
+      <section class="main-content-area">
         <div class="side-column">
           <div class="widget-box photos">
             <div class="head">
@@ -43,8 +43,7 @@
             <div class="body">
               <div class="scroll-box">
                 <div class="pics" style="padding-bottom:10px">
-                  <img
-                   src="https://images.pexels.com/photos/8817/food-dinner-pasta-broccoli.jpg?h=350&auto=compress&cs=tinysrgb" alt="pic">
+                  <img src="https://images.pexels.com/photos/8817/food-dinner-pasta-broccoli.jpg?h=350&auto=compress&cs=tinysrgb" alt="pic">
                 </div>
                 <div class="pics">
                   <img src="https://images.unsplash.com/photo-1512152272829-e3139592d56f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db4ad901fa9d778a5878044dc58a29cf&w=1000&q=80" alt="pic">
@@ -100,7 +99,7 @@
               <li>
                 <div class="upload-btn">
                   <i class="fa fa-upload" aria-hidden="true"></i>
-                <span>Upload</span>
+                  <span>Upload</span>
                 </div>
               </li>
             </ul>
@@ -208,34 +207,33 @@
           <div class="upload-pictures">
             <form action="upload.php" method="POST">
               <p>Want to join the food fight? Upload your food below!</p>
-                <input type="file" multiple>
-            </div>
+              <input type="file" multiple>
           </form>
+        </div>
           <button type="submit" name="button">Post</button>
         </div>
       </form>
     </section>
 
-
   </div>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="http://localhost:2403/dpd.js" type="text/javascript"></script>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(".task-form").addClass("hidden")
-        $(".upload-btn").on("click", function() {
-          $(".task-form").removeClass("hidden")
-          $(".task-form").addClass("active")
-          $("body").css("overflow", "hidden");
-        })
-        $(".task-form .close-btn").on("click", function() {
-          $(".task-form").removeClass("active")
-          $(".task-form").addClass("hidden")
-          $("body").css("overflow", "auto");
-        })
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".task-form").addClass("hidden")
+      $(".upload-btn").on("click", function() {
+        $(".task-form").removeClass("hidden")
+        $(".task-form").addClass("active")
+        $("body").css("overflow", "hidden");
       })
-      </script>
+      $(".task-form .close-btn").on("click", function() {
+        $(".task-form").removeClass("active")
+        $(".task-form").addClass("hidden")
+        $("body").css("overflow", "auto");
+      })
+    })
+  </script>
 </body>
 
 </html>
